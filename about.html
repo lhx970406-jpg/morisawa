@@ -3,35 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>会社概要 | 株式会社盛澤</title>
+    <title>About | 株式会社盛澤</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="fonts.googleapis.com" rel="stylesheet">
 </head>
-<body class="bg-white pt-32 text-slate-900">
-    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html"><img src="image.rakuten.co.jp" class="h-10 md:h-12 w-auto"></a>
-            <div class="space-x-8 text-sm font-bold tracking-widest">
-                <a href="index.html" class="hover:text-red-600 transition">HOME</a>
-                <a href="about.html" class="text-red-600">COMPANY</a>
-                <a href="services.html" class="hover:text-red-600 transition">SERVICE</a>
-                <a href="contact.html" class="hover:text-red-600 transition">CONTACT</a>
+<body class="bg-white pt-48 pb-32 px-8">
+    <header class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm border-b border-slate-50">
+        <nav class="max-w-[1600px] mx-auto px-16 h-24 flex justify-between items-center text-[11px] font-bold tracking-[0.2em] uppercase">
+            <a href="index.html" class="text-2xl tracking-[0.2em]">MoriSawa</a>
+            <div class="hidden md:flex space-x-12 uppercase">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="border-b border-black">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="max-w-[1000px] mx-auto">
+        <span class="text-[10px] tracking-[0.4em] text-slate-400 block mb-4 uppercase">Company Profile</span>
+        <h1 class="text-4xl md:text-6xl font-bold mb-24" style="font-family: 'Shippori Mincho';">会社概要</h1>
+        
+        <div class="divide-y divide-slate-200">
+            <div class="grid md:grid-cols-4 py-10">
+                <div class="text-xs font-bold tracking-[0.2em] mb-4 md:mb-0">名称</div>
+                <div class="md:col-span-3 text-lg font-light leading-relaxed">株式会社盛澤</div>
+            </div>
+            <div class="grid md:grid-cols-4 py-10">
+                <div class="text-xs font-bold tracking-[0.2em] mb-4 md:mb-0">所在地</div>
+                <div class="md:col-span-3 text-lg font-light leading-relaxed">〒590-0982 大阪府堺市堺区海山町4丁171-2</div>
+            </div>
+            <div class="grid md:grid-cols-4 py-10">
+                <div class="text-xs font-bold tracking-[0.2em] mb-4 md:mb-0">代表者</div>
+                <div class="md:col-span-3 text-lg font-light leading-relaxed">代表取締役 盛 伝旺</div>
+            </div>
+            <div class="grid md:grid-cols-4 py-10">
+                <div class="text-xs font-bold tracking-[0.2em] mb-4 md:mb-0">事業内容</div>
+                <div class="md:col-span-3 text-lg font-light leading-relaxed">
+                    Eコマース運営事業（Amazon / 楽天市場 / Yahoo!ショッピング / au PAY マーケット）<br>
+                    国内卸売・小売事業、越境EC支援、物流ソリューション
+                </div>
             </div>
         </div>
-    </nav>
 
-    <div class="max-w-6xl mx-auto px-6 py-16">
-        <h1 class="text-4xl font-bold mb-20 text-center tracking-tight uppercase">Company Profile</h1>
-        
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start mb-24">
-            <div class="divide-y divide-slate-100">
-                <div class="grid grid-cols-3 py-6"><dt class="font-bold text-slate-400">会社名</dt><dd class="col-span-2 font-bold">株式会社盛澤</dd></div>
-                <div class="grid grid-cols-3 py-6"><dt class="font-bold text-slate-400">代表者</dt><dd class="col-span-2">盛 伝旺</dd></div>
-                <div class="grid grid-cols-3 py-6"><dt class="font-bold text-slate-400">所在地</dt><dd class="col-span-2 text-slate-600">〒590-0982 大阪府堺市堺区海山町4丁171-2</dd></div>
-                <div class="grid grid-cols-3 py-6"><dt class="font-bold text-slate-400">連絡先</dt><dd class="col-span-2">TEL: 072-242-3995 / FAX: 072-242-3995</dd></div>
-            </div>
-            <div class="rounded-3xl overflow-hidden shadow-2xl h-[400px]">
-                <iframe src="www.google.com" width="100%" height="100%" style="border:0;" loading="lazy"></iframe>
-            </div>
+        <!-- Google Map (シンプルに埋め込み) -->
+        <div class="mt-32 grayscale hover:grayscale-0 transition-all duration-1000">
+            <iframe src="www.google.com" width="100%" height="500" style="border:0;" loading="lazy"></iframe>
         </div>
     </div>
 </body>
